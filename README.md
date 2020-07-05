@@ -1,5 +1,5 @@
 # git-programming-for-data-science-project-udacity
-# Project for the Udacity Programming for Data Science Nanodegree
+# Project for the Udacity Programming for DS Nanodegree
 
 # Description: 
 Project completed July 2020, the assignement consists in create a Git profile and insert all the requested commands in the repository.
