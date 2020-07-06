@@ -15,7 +15,11 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('\nHello! Let\'s explore some US bikeshare data!')
+
+    print('\nHey people! Let\'s explore some US bikeshare data!')
+
+    print('\nHi People! Let\'s explore some US bikeshare data!')
+
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
     while True:
@@ -30,7 +34,7 @@ def get_filters():
     while True:
         month = input("What\'s the month would you like to select?\njanuary, february, march, april, may, june or all\n").title()
         if month not in ('January','February','March','April','May','June','all'):
-                     print('Sorry, couldn\'t find that. Please type one of the available options')
+                     print('Sorry, couldn\'t find that Month. Please type one of the available options')
                      continue
                    else:
                      break
@@ -148,7 +152,7 @@ def user_stats(df):
     # Display counts of user types
     user_type = df.groupby(['User Type'])['User Type'].count()
     print(user_type, "\n")
-    if city != 'washington':
+    if city != 'washington':  #Washington doesn't display user type data
 
         # Display counts of gender
         gender = df.groupby(['Gender'])['Gender'].count()
